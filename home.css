@@ -1,0 +1,74 @@
+body {
+    background-color: pink;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  .center {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+  
+  .top-left {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .top-right {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  
+  .bottom-left {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .bottom-right {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  
+  /* เอฟเฟกต์เด้งเมื่อเอาเมาส์ชี้ */
+  .hover-bounce {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .hover-bounce:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Responsive สำหรับจอเล็ก */
+  @media (max-width: 50px) {
+    body {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      height: auto;
+      font-size: 40px;
+      padding: 20px 0;
+    }
+  
+    .center,
+    .top-left,
+    .top-right,
+    .bottom-left,
+    .bottom-right {
+      grid-column: auto;
+      grid-row: auto;
+    }
+  }
+  
+  
+  
+  
+  
+  

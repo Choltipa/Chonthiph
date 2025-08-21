@@ -1,0 +1,68 @@
+body {
+    background-color: pink;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .container {
+    padding: 50px 20px;
+  }
+  
+  /* กล่องเมฆ */
+  .title {
+    display: inline-block;
+    background-color: orange;
+    padding: 20px 40px;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 50% 40% 50% 40% / 40% 50% 40% 50%; /* ทำทรงคล้ายเมฆ */
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .title:hover {
+    transform: scale(1.1);
+  }
+  
+  /* ลิงก์ Contact */
+  .title a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* ข้อมูลติดต่อ */
+  .info {
+    font-size: 28px;
+    line-height: 2;
+  }
+  
+  .info p {
+    margin: 15px 0;
+  }
+  
+  .info a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .info a:hover {
+    color: darkblue;
+    transform: scale(1.1);
+    display: inline-block;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 28px;
+      padding: 15px 30px;
+    }
+  
+    .info {
+      font-size: 20px;
+    }
+  }
