@@ -47,14 +47,36 @@ body {
     transform: translateY(-10px);
   }
   
-  /* Responsive สำหรับจอเล็ก */
-  @media (max-width: 50px) {
+  /* Responsive Tablet */
+  @media (max-width: 768px) {
     body {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
       height: auto;
       font-size: 40px;
       padding: 20px 0;
+    }
+  
+    .center {
+      grid-column: 1 / span 2;
+      grid-row: auto;
+    }
+  
+    .top-left,
+    .top-right,
+    .bottom-left,
+    .bottom-right {
+      grid-column: auto;
+      grid-row: auto;
+    }
+  }
+  
+  /* Responsive Mobile */
+  @media (max-width: 480px) {
+    body {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      font-size: 30px;
     }
   
     .center,
@@ -66,9 +88,5 @@ body {
       grid-row: auto;
     }
   }
-  
-  
-  
-  
   
   
