@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    text-align: center;
+  }
+  
+  .container {
+    padding: 40px 20px;
+  }
+  
+  /* กล่องหัวข้อ */
+  .title {
+    background-color: orange;
+    display: inline-block;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    border-radius: 30px; /* มุมโค้งมน */
+    margin-bottom: 40px;
+  }
+  
+  .places {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 1.4rem;
+      padding: 10px 25px;
+    }
+  
+    .places {
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+  }
+  
